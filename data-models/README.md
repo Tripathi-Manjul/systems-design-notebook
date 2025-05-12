@@ -37,6 +37,16 @@
 
 ---
 
+### Key Concepts Revisited: Why They Matter for Indexing
+
+| Concept                            | Why It Matters                                                                                     |
+|------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Data model abstraction             | Understand relational vs document-based models; indexing strategies (B-tree vs others) differ.      |
+| Data encoding and storage          | Serialized keys must be comparable — B-tree relies on correct encoding for order preservation.       |
+| Normalization vs Denormalization   | Impacts join frequency and query patterns — B-trees optimize key-based access in both cases.        |
+
+---
+
 ## Additional Learning Outcomes
 
 - Understand when different models are used and how indexing must adapt.
@@ -45,8 +55,8 @@
 
 ---
 
-## Next: Explore
+## Next
 
-- [`b-tree.py`](./b-tree.py): A basic B-tree implementation with search and insert operations.
-- [`normalization.md`](./normalization.md): Tradeoffs in data modeling and their impact on indexing.
-- [`encoding.md`](./encoding.md): How encoding formats affect indexability and comparison logic.
+- [`b-tree.py`](./b-tree.py): Python implementation with comments linking operations to indexing use cases.
+- [`normalization.md`](./normalization.md): Normalization tradeoffs and indexing.
+- [`encoding.md`](./encoding.md): How encoding choices affect sort order and index efficiency.
